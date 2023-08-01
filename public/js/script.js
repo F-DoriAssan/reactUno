@@ -8,3 +8,13 @@ document.addEventListener("visibilitychange", function () {
         $("#favicon").attr("href", "images/faviconX.ico");
     }
 })
+
+// Inicio del loader
+function loader() {
+    document.querySelector(".loader-container").classList.add("fade-out");
+  }
+  function fadeOut() {
+    setInterval(loader, 500);
+  }
+  window.onload = fadeOut;
+  // fin del loader

@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const ejsMate = require("ejs-mate");
 const path = require("path");
+const methodOverride = require("method-override");
 
 //configuro motor de vistar con su directorios
 app.engine("ejs", ejsMate);
